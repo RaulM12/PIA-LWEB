@@ -7427,6 +7427,7 @@
       "Microsoft.AspNetCore.Identity.UI >= 6.0.33",
       "Microsoft.EntityFrameworkCore.Sqlite >= 6.0.33",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.33",
+      "MySql.Data >= 8.0.22",
       "MySql.Data.EntityFrameworkCore >= 8.0.22"
     ]
   },
@@ -7499,6 +7500,10 @@
           "Microsoft.EntityFrameworkCore.Tools": {
             "target": "Package",
             "version": "[6.0.33, )"
+          },
+          "MySql.Data": {
+            "target": "Package",
+            "version": "[8.0.22, )"
           },
           "MySql.Data.EntityFrameworkCore": {
             "target": "Package",
