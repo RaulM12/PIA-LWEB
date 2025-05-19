@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/raulmanzaneramedina/Projects/PaginaRecetas/PaginaRecetas/PaginaRecetas.csproj": {}
+    "/Users/raulmanzaneramedina/Library/CloudStorage/OneDrive-UniversidadAutonomadeNuevoLeón/Uni OneDrive/Página de Recetas/Repositorio/PIA-LWEB/PaginaRecetas/PaginaRecetas.csproj": {}
   },
   "projects": {
-    "/Users/raulmanzaneramedina/Projects/PaginaRecetas/PaginaRecetas/PaginaRecetas.csproj": {
+    "/Users/raulmanzaneramedina/Library/CloudStorage/OneDrive-UniversidadAutonomadeNuevoLeón/Uni OneDrive/Página de Recetas/Repositorio/PIA-LWEB/PaginaRecetas/PaginaRecetas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/raulmanzaneramedina/Projects/PaginaRecetas/PaginaRecetas/PaginaRecetas.csproj",
+        "projectUniqueName": "/Users/raulmanzaneramedina/Library/CloudStorage/OneDrive-UniversidadAutonomadeNuevoLeón/Uni OneDrive/Página de Recetas/Repositorio/PIA-LWEB/PaginaRecetas/PaginaRecetas.csproj",
         "projectName": "PaginaRecetas",
-        "projectPath": "/Users/raulmanzaneramedina/Projects/PaginaRecetas/PaginaRecetas/PaginaRecetas.csproj",
+        "projectPath": "/Users/raulmanzaneramedina/Library/CloudStorage/OneDrive-UniversidadAutonomadeNuevoLeón/Uni OneDrive/Página de Recetas/Repositorio/PIA-LWEB/PaginaRecetas/PaginaRecetas.csproj",
         "packagesPath": "/Users/raulmanzaneramedina/.nuget/packages/",
-        "outputPath": "/Users/raulmanzaneramedina/Projects/PaginaRecetas/PaginaRecetas/obj/",
+        "outputPath": "/Users/raulmanzaneramedina/Library/CloudStorage/OneDrive-UniversidadAutonomadeNuevoLeón/Uni OneDrive/Página de Recetas/Repositorio/PIA-LWEB/PaginaRecetas/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/raulmanzaneramedina/.nuget/NuGet/NuGet.Config"
