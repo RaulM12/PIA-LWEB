@@ -1,0 +1,91 @@
+@{
+    ViewData["Title"] = "Mi Cuenta";
+}
+
+<div class="account-container container">
+    <!-- Sección de perfil -->
+    <div class="profile-section">
+        <div class="profile-picture" id="profile-picture">
+            <img src="/path/to/default-profile.jpg" alt="Foto de perfil" />
+        </div>
+        <div class="profile-info">
+            <span id="name-text">Tu Nombre</span>
+            <button class="btn btn-light btn-sm edit-name">
+                <i class="fas fa-pencil-alt"></i> Editar Nombre
+            </button>
+            <button class="btn btn-light btn-sm edit-photo">
+                <i class="fas fa-camera"></i> Cambiar Foto
+            </button>
+        </div>
+        <!-- Input oculto para cargar la imagen -->
+        <input type="file" id="upload-photo" accept="image/*" style="display: none;" />
+    </div>
+
+   <!-- Botones de navegación -->
+    <div class="account-buttons">
+        <button class="btn btn-light">Favoritos</button>
+        <button class="btn btn-primary">Recetas guardadas</button>
+        <button class="btn btn-primary btn-published">Recetas publicadas</button>
+    </div>
+
+        <!-- Recetas favoritas -->
+    <div class="favorites-section">
+        <h3>Recetas Favoritas</h3>
+        <div class="filter-buttons">
+            <button class="btn btn-light" data-filter="recientes">Recientes</button>
+            <button class="btn btn-light" data-filter="antiguas">Antiguas</button>
+            <button class="btn btn-light" data-filter="mejor valoradas">Mejor valoradas</button>
+        </div>
+
+       <div class="recipe-list">
+            <div class="recipe-card" data-category="recientes">
+                <p>Receta Reciente 1</p>
+            </div>
+            <div class="recipe-card" data-category="antiguas">
+                <p>Receta Antigua 1</p>
+            </div>
+            <div class="recipe-card" data-category="mejor valoradas">
+                <p>Receta Mejor Valorada 1</p>
+            </div>
+        </div>
+
+        <!-- Lista de recetas -->
+        <div class="recipe-card">
+            <div class="recipe-image">
+                <img src="https://via.placeholder.com/100" alt="Recipe Image">
+            </div>
+            <div class="recipe-details">
+                <h4 class="recipe-title">Título</h4>
+                <p class="recipe-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="recipe-rating">
+                    ★★★★☆
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal para editar el nombre -->
+<div class="modal fade" id="editNameModal" tabindex="-1" aria-labelledby="editNameModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editNameModalLabel">Editar Nombre</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <label for="newNameInput" class="form-label">Introduce tu nuevo nombre:</label>
+                <input type="text" class="form-control" id="newNameInput" placeholder="Nuevo nombre" />
+                <!-- Aquí se mostrarán mensajes de error -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary" id="saveNameButton">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/cuenta.js"></script>
+}

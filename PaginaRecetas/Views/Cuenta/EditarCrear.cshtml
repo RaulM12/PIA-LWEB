@@ -1,0 +1,56 @@
+@{
+    ViewData["Title"] = "Editar/Crear";
+}
+
+<div class="container">
+    <h1>Editar/Crear</h1>
+    <div class="recipe-editor">
+        <div class="recipe-header">
+            <div class="recipe-image">
+                <img src="/path/to/default-image.jpg" alt="Imagen de la receta">
+                <button class="edit-image edit-icon">🖼</button>
+            </div>
+            <div class="recipe-details">
+                <h2 class="recipe-title">Título</h2>
+                <button class="edit-title edit-icon">✎</button>
+                <p class="recipe-description">Descripción breve de la receta.</p>
+                <button class="edit-description edit-icon">✎</button>
+            </div>
+        </div>
+        <div class="recipe-meta">
+            <p>
+                Dificultad: <span class="difficulty-indicator" data-level="Fácil">Fácil</span>
+                <button class="edit-difficulty edit-icon">✎</button>
+            </p>
+            <p>
+                Tiempo: <span class="recipe-time">20 min</span>
+                <button class="edit-time edit-icon">✎</button>
+            </p>
+        </div>
+        <div class="ingredients">
+            <h3>Ingredientes</h3>
+            <ul>
+                <li>Ingrediente 1 <span class="delete-ingredient">🗑</span></li>
+                <li>Ingrediente 2 <span class="delete-ingredient">🗑</span></li>
+            </ul>
+            <button class="add-ingredient">Añadir Ingrediente</button>
+        </div>
+        <div class="preparation">
+            <h3>Preparación</h3>
+            <ul>
+                <li>Paso 1 <span class="delete-step">🗑</span></li>
+                <li>Paso 2 <span class="delete-step">🗑</span></li>
+            </ul>
+            <button class="add-step">Añadir Paso</button>
+        </div>
+        <div class="actions">
+            <button class="btn-cancel">Cancelar</button>
+            <button class="btn-save">Guardar</button>
+        </div>
+    </div>
+    <!-- Input para cargar imagen -->
+    <input type="file" id="upload-image" style="display: none;" accept="image/*">
+</div>
+
+
+<script src="~/js/editarcrear.js"></script>
