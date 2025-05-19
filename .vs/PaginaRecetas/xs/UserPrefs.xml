@@ -1,4 +1,27 @@
 ﻿<Properties StartupConfiguration="{6E8B54C2-3A31-4FC2-BB2A-4A216C20F2AD}|Default" GitUserInfo="UsingGIT">
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="PaginaRecetas">
+            <Node name="PaginaRecetas">
+              <Node name="Areas" expanded="True" />
+              <Node name="Views">
+                <Node name="Admin" selected="True" />
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.PaginaRecetas PreferredExecutionTarget="/Applications/Arc.app" />
 </Properties>

@@ -15,7 +15,7 @@
             <li><a asp-area="" asp-controller="Admin" asp-action="GestionUsuarios">Gestión de usuarios</a></li>
             <li><a asp-area="" asp-controller="Admin" asp-action="GestionElementosDestacados">Gestión de elementos destacados</a></li>
             <li class="submenu">
-                <a id="gestionFiltros" asp-area="" asp-controller="Admin" asp-action="GestionFiltros">Gestión de Filtros</a>
+                <a id="gestionFiltros" asp-area="" asp-controller="Admin" asp-action="GestionFlt">Gestión de Filtros</a>
                 <ul class="submenu-items">
                     <li><a asp-area="" asp-controller="Admin" asp-action="FiltroTipo">Tipo</a></li>
                     <li><a asp-area="" asp-controller="Admin" asp-action="FiltroComplejidad">Complejidad</a></li>
@@ -28,42 +28,40 @@
         </ul>
     </div>
     <main class="main-content">
-        <h2>Elementos destacados</h2>
 
-        <div class="table-container">
+        <section class="reportes">
+            <h2>Reportes</h2>
             <table>
                 <thead>
                     <tr>
-                        <th>Receta destacada</th>
-                        <th>Estrellas</th>
-                        <th>Favoritos</th>
-                        <th>Selección</th>
-                        <th>Opciones</th>
+                        <th>No. de reporte</th>
+                        <th>Tipo de reporte</th>
+                        <th>Acción</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Receta</td>
-                        <td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
-                        <td>100 <i class="fas fa-heart"></i></td>
-                        <td>mejor valorada 1</td>
+                        <td>#43453012</td>
+                        <td>Contenido incoherente</td>
                         <td>
-                            <i class="fas fa-trash-alt delete-icon" title="Eliminar"></i>
+                            <button>Descartar</button>
+                            <button>Suspender receta</button>
+                            <button>Ver</button>
                         </td>
                     </tr>
                     <tr>
-                        <td>Receta</td>
-                        <td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
-                        <td>100 <i class="fas fa-heart"></i></td>
-                        <td>mejor valorada 2</td>
+                        <td>#23491113</td>
+                        <td>Contenido explícito</td>
                         <td>
-                            <i class="fas fa-trash-alt delete-icon" title="Eliminar"></i>
+                            <button>Descartar</button>
+                            <button>Suspender receta</button>
+                            <button>Ver</button>
                         </td>
                     </tr>
-
                 </tbody>
             </table>
-            <button class="add-btn"><i class="fas fa-plus"></i> Agregar destacada</button>
-        </div>
+        </section>
+
     </main>
+
 </div>
