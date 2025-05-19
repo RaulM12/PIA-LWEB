@@ -1,0 +1,88 @@
+﻿@{
+    ViewData["Title"] = "Administración";
+}
+<head>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<div class="admin-container">
+    <header class="admin-header">
+        <h1>ADMINISTRACIÓN</h1>
+    </header>
+
+    <div class="sidebar">
+        <ul>
+            <li><a asp-area="" asp-controller="Admin" asp-action="Estadisticas">Estadísticas</a></li>
+            <li><a asp-area="" asp-controller="Admin" asp-action="GestionUs">Gestión de usuarios</a></li>
+            <li><a asp-area="" asp-controller="Admin" asp-action="GestionElDest">Gestión de elementos destacados</a></li>
+            <li class="submenu">
+                <a id="gestionFiltros" asp-area="" asp-controller="Admin" asp-action="GestionFlt">Gestión de Filtros</a>
+                <ul class="submenu-items">
+                    <li><a asp-area="" asp-controller="Admin" asp-action="FiltroTipo">Tipo</a></li>
+                    <li><a asp-area="" asp-controller="Admin" asp-action="FiltroComplejidad">Complejidad</a></li>
+                    <li><a asp-area="" asp-controller="Admin" asp-action="FiltroTiempo">Tiempo</a></li>
+                    <li><a asp-area="" asp-controller="Admin" asp-action="FiltroRegion">Región</a></li>
+                </ul>
+            </li>
+            <li><a asp-area="" asp-controller="Admin" asp-action="Reportes">Reportes</a></li>
+            <li><a asp-area="" asp-controller="Admin" asp-action="RectNuevas">Recetas nuevas</a></li>
+        </ul>
+    </div>
+    <main class="main-content">
+        <h2>Usuarios</h2>
+
+        <div class="filter">
+            <label for="role-filter">Filtrar por:</label>
+            <select id="role-filter">
+                <option value="Todos">Todos</option>
+                <option value="Moderador">Moderador</option>
+                <option value="Usuario">Usuario</option>
+            </select>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Fecha de alta</th>
+                        <th>Nombre de usuario</th>
+                        <th>Correo</th>
+                        <th>Rol</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>***</td>
+                        <td>--/--/--</td>
+                        <td>User066</td>
+                        <td>user066@gmail.com</td>
+                        <td>Moderador</td>
+                        <td>
+                            <button class="action-menu">:</button>
+                            <div class="dropdown-menu">
+                                <a href="#">Cambiar a usuario</a>
+                                <a href="#">Eliminar cuenta</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>***</td>
+                        <td>--/--/--</td>
+                        <td>User066</td>
+                        <td>user066@gmail.com</td>
+                        <td>Usuario</td>
+                        <td>
+                            <button class="action-menu">:</button>
+                            <div class="dropdown-menu">
+                                <a href="#">Cambiar a moderador</a>
+                                <a href="#">Eliminar cuenta</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- Agregar filas aqui -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+</div>
