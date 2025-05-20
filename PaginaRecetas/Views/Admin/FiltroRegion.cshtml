@@ -1,8 +1,8 @@
-﻿@{
-    ViewData["Title"] = "Tipo";
+@{
+    ViewData["Title"] = "Region";
 }
 <head>
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
 </head>
 <div class="admin-container">
     <header class="admin-header">
@@ -12,10 +12,10 @@
     <div class="sidebar">
         <ul>
             <li><a asp-area="" asp-controller="Admin" asp-action="Estadisticas">Estadísticas</a></li>
-            <li><a asp-area="" asp-controller="Admin" asp-action="GestionUsuarios">Gestión de usuarios</a></li>
-            <li><a asp-area="" asp-controller="Admin" asp-action="GestionElementosDestacados">Gestión de elementos destacados</a></li>
+            <li><a asp-area="" asp-controller="Admin" asp-action="GestionUs">Gestión de usuarios</a></li>
+            <li><a asp-area="" asp-controller="Admin" asp-action="GestionElDest">Gestión de elementos destacados</a></li>
             <li class="submenu">
-                <a id="gestionFiltros" asp-area="" asp-controller="Admin" asp-action="GestionFiltros">Gestión de Filtros</a>
+                <a id="gestionFiltros" asp-area="" asp-controller="Admin" asp-action="GestionFlt">Gestión de Filtros</a>
                 <ul class="submenu-items">
                     <li><a asp-area="" asp-controller="Admin" asp-action="FiltroTipo">Tipo</a></li>
                     <li><a asp-area="" asp-controller="Admin" asp-action="FiltroComplejidad">Complejidad</a></li>
@@ -24,23 +24,23 @@
                 </ul>
             </li>
             <li><a asp-area="" asp-controller="Admin" asp-action="Reportes">Reportes</a></li>
-            <li><a asp-area="" asp-controller="Admin" asp-action="RecetasNuevas">Recetas nuevas</a></li>
+            <li><a asp-area="" asp-controller="Admin" asp-action="RectNuevas">Recetas nuevas</a></li>
         </ul>
     </div>
     <main class="main-content">
-        <h2>Filtros</h2>
+        <h2>Filtros - Region</h2>
         <table class="filters-table">
             <thead>
                 <tr>
                     <th>Nombre</th>
                     <th>Visitas</th>
-                    <th>Etiquetas</th>
+                    <th>Veces utilizado</th>
                     <th>Opciones</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Región</td>
+                    <td>China</td>
                     <td>37</td>
                     <td>Etiqueta, Etiqueta</td>
                     <td>
@@ -49,7 +49,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Complejidad</td>
+                    <td>Italiana</td>
                     <td>37</td>
                     <td>Etiqueta, Etiqueta</td>
                     <td>
@@ -58,7 +58,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Tiempo de reparación</td>
+                    <td>Mexicana</td>
                     <td>37</td>
                     <td>Etiqueta, Etiqueta</td>
                     <td>
@@ -67,7 +67,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Tipo</td>
+                    <td>Americana</td>
                     <td>37</td>
                     <td>Etiqueta, Etiqueta</td>
                     <td>
