@@ -1,0 +1,39 @@
+@{
+    ViewData["Title"] = "Recetas Publicadas";
+}
+
+
+<div class="published-recipes-container">
+    <header>
+        <h1>Recetas Publicadas</h1>
+        <a class="btn btn-create-recipe" asp-area="" asp-controller="Cuenta" asp-action="EditarCrear">
+            Crear Receta
+       </a>
+    </header>
+    <div id="recipe-list" class="recipe-list">
+        @for (int i = 0; i < 4; i++)
+        {
+            <div class="recipe-item">
+                <div class="recipe-image">
+                    <img src="/path/to/default-image.jpg" alt="Imagen de la receta">
+                </div>
+                <div class="recipe-details">
+                    <h2 class="recipe-title">
+                        <a href="/Cuenta/DetalleReceta/@i" class="recipe-link">Título @i</a>
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+                </div>
+                <div class="actions">
+                    <button class="btn-edit" data-index="@i">✎</button>
+                    <button class="btn-delete" data-recipe-id="@i">🗑</button>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+
+<script src="~/js/recetaspublicadas.js"></script>
