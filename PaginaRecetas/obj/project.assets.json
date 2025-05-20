@@ -7507,11 +7507,16 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\compu\\.nuget\\packages\\": {}
+=======
+    "/Users/raulmanzaneramedina/.nuget/packages/": {}
+>>>>>>> 342aa691bf236dc47c7db9c8dc8aab7a454e62d1
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\compu\\OneDrive - Universidad Autonoma de Nuevo León\\Desktop\\PIA-LWEB\\PaginaRecetas\\PaginaRecetas.csproj",
       "projectName": "PaginaRecetas",
       "projectPath": "C:\\Users\\compu\\OneDrive - Universidad Autonoma de Nuevo León\\Desktop\\PIA-LWEB\\PaginaRecetas\\PaginaRecetas.csproj",
@@ -7520,6 +7525,16 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\compu\\AppData\\Roaming\\NuGet\\NuGet.Config"
+=======
+      "projectUniqueName": "/Users/raulmanzaneramedina/Library/CloudStorage/OneDrive-UniversidadAutonomadeNuevoLeón/Uni OneDrive/Página de Recetas/Repositorio/PIA-LWEB/PaginaRecetas/PaginaRecetas.csproj",
+      "projectName": "PaginaRecetas",
+      "projectPath": "/Users/raulmanzaneramedina/Library/CloudStorage/OneDrive-UniversidadAutonomadeNuevoLeón/Uni OneDrive/Página de Recetas/Repositorio/PIA-LWEB/PaginaRecetas/PaginaRecetas.csproj",
+      "packagesPath": "/Users/raulmanzaneramedina/.nuget/packages/",
+      "outputPath": "/Users/raulmanzaneramedina/Library/CloudStorage/OneDrive-UniversidadAutonomadeNuevoLeón/Uni OneDrive/Página de Recetas/Repositorio/PIA-LWEB/PaginaRecetas/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/raulmanzaneramedina/.nuget/NuGet/NuGet.Config"
+>>>>>>> 342aa691bf236dc47c7db9c8dc8aab7a454e62d1
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -7587,6 +7602,23 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+<<<<<<< HEAD
+=======
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.31, 6.0.31]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.osx-arm64",
+            "version": "[6.0.31, 6.0.31]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.31, 6.0.31]"
+          }
+        ],
+>>>>>>> 342aa691bf236dc47c7db9c8dc8aab7a454e62d1
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -7595,7 +7627,11 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.428\\RuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.410/RuntimeIdentifierGraph.json"
+>>>>>>> 342aa691bf236dc47c7db9c8dc8aab7a454e62d1
       }
     }
   }
