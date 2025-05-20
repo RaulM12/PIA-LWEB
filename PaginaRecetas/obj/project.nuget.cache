@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8ZYmGKIDJDJOb+r3q5KslbFqv1cjpVsLNUFBhqETs86I5p95OMeIm2Tihr/7MXKyicOtBzGSXAbApS2C/5ueLg==",
+  "dgSpecHash": "oTaY+ugUgd4=",
   "success": true,
   "projectFilePath": "/Users/raulmanzaneramedina/Library/CloudStorage/OneDrive-UniversidadAutonomadeNuevoLeón/Uni OneDrive/Página de Recetas/Repositorio/PIA-LWEB/PaginaRecetas/PaginaRecetas.csproj",
   "expectedPackageFiles": [
@@ -132,9 +132,9 @@
     "/Users/raulmanzaneramedina/.nuget/packages/system.xml.xmldocument/4.0.1/system.xml.xmldocument.4.0.1.nupkg.sha512",
     "/Users/raulmanzaneramedina/.nuget/packages/system.xml.xpath/4.0.1/system.xml.xpath.4.0.1.nupkg.sha512",
     "/Users/raulmanzaneramedina/.nuget/packages/system.xml.xpath.xmldocument/4.0.1/system.xml.xpath.xmldocument.4.0.1.nupkg.sha512",
-    "/Users/raulmanzaneramedina/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.31/microsoft.aspnetcore.app.ref.6.0.31.nupkg.sha512",
-    "/Users/raulmanzaneramedina/.nuget/packages/microsoft.netcore.app.host.osx-arm64/6.0.31/microsoft.netcore.app.host.osx-arm64.6.0.31.nupkg.sha512",
-    "/Users/raulmanzaneramedina/.nuget/packages/microsoft.netcore.app.ref/6.0.31/microsoft.netcore.app.ref.6.0.31.nupkg.sha512"
+    "/Users/raulmanzaneramedina/.nuget/packages/microsoft.netcore.app.ref/6.0.36/microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
+    "/Users/raulmanzaneramedina/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.36/microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512",
+    "/Users/raulmanzaneramedina/.nuget/packages/microsoft.netcore.app.host.osx-arm64/6.0.36/microsoft.netcore.app.host.osx-arm64.6.0.36.nupkg.sha512"
   ],
   "logs": []
 }
