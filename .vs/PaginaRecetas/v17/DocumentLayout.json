@@ -44,7 +44,7 @@
               "RelativeDocumentMoniker": "PaginaRecetas\\Data\\ApplicationDbContext.cs",
               "ToolTip": "C:\\Users\\marco\\Documents\\PIA-LWEB\\PaginaRecetas\\Data\\ApplicationDbContext.cs",
               "RelativeToolTip": "PaginaRecetas\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAJUAAAAAAAAAAAAowJoAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAJ0AAAAAAAAAAAAIwJoAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-19T22:20:47.19Z",
               "EditorCaption": ""
@@ -59,8 +59,7 @@
               "RelativeToolTip": "PaginaRecetas\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-19T21:22:03.211Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T21:22:03.211Z"
             },
             {
               "$type": "Document",
@@ -70,7 +69,7 @@
               "RelativeDocumentMoniker": "PaginaRecetas\\Program.cs",
               "ToolTip": "C:\\Users\\marco\\Documents\\PIA-LWEB\\PaginaRecetas\\Program.cs",
               "RelativeToolTip": "PaginaRecetas\\Program.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAABEAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAIBJwBEAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-19T19:51:07.102Z"
             },
@@ -82,7 +81,7 @@
               "RelativeDocumentMoniker": "PaginaRecetas\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\marco\\Documents\\PIA-LWEB\\PaginaRecetas\\Controllers\\HomeController.cs",
               "RelativeToolTip": "PaginaRecetas\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAqwC4AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAA6wC4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-19T22:18:43.774Z"
             },
