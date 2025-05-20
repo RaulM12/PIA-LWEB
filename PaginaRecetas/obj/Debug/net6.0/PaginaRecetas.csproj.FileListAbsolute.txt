@@ -333,4 +333,4 @@ C:\Users\javid\OneDrive\Escritorio\PIA-LWEB\PaginaRecetas\obj\Debug\net6.0\refin
 C:\Users\javid\OneDrive\Escritorio\PIA-LWEB\PaginaRecetas\obj\Debug\net6.0\PaginaRecetas.pdb
 C:\Users\javid\OneDrive\Escritorio\PIA-LWEB\PaginaRecetas\obj\Debug\net6.0\PaginaRecetas.genruntimeconfig.cache
 C:\Users\javid\OneDrive\Escritorio\PIA-LWEB\PaginaRecetas\obj\Debug\net6.0\ref\PaginaRecetas.dll
->>>>>>> e782b7ee96012950c7d3c61a779037c470d0ca6a
+e782b7ee96012950c7d3c61a779037c470d0ca6a

@@ -45,7 +45,12 @@ public class ApplicationDbContext : IdentityDbContext
             entity.Property(uc => uc.UserId).HasColumnType("varchar(255)");
         });
 
+       
 
+        builder.Entity<IdentityUser>(b =>
+        {
+            b.Property(u => u.NormalizedEmail).HasMaxLength(256);
+        });
     }
 
 

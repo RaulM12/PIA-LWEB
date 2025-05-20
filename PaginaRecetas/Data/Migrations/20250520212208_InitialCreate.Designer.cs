@@ -11,8 +11,8 @@ using PaginaRecetas.Data;
 namespace PaginaRecetas.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250520183219_FixRoleIdLength")]
-    partial class FixRoleIdLength
+    [Migration("20250520212208_InitialCreate")]
+    partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
