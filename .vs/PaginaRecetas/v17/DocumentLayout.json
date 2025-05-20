@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\Users\\marco\\Documents\\PIA-LWEB\\",
   "Documents": [
     {
@@ -27,10 +28,15 @@
       "RelativeMoniker": "D:0:0:{6E8B54C2-3A31-4FC2-BB2A-4A216C20F2AD}|PaginaRecetas\\PaginaRecetas.csproj|solutionrelative:paginarecetas\\paginarecetas.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
+=======
+  "WorkspaceRootPath": "C:\\Users\\compu\\OneDrive - Universidad Autonoma de Nuevo Le\u00F3n\\Desktop\\PIA-LWEB\\",
+  "Documents": [],
+>>>>>>> 4b1bb3192d98cc261ad1cb0ad749931d3c5f03d9
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
+<<<<<<< HEAD
       "DocumentGroups": [
         {
           "DockedWidth": 200,
@@ -112,6 +118,9 @@
           ]
         }
       ]
+=======
+      "DocumentGroups": []
+>>>>>>> 4b1bb3192d98cc261ad1cb0ad749931d3c5f03d9
     }
   ]
 }
