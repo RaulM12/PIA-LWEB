@@ -30,3 +30,19 @@ public class HomeController : Controller
     }
 }
 
+public class UsuariosController : Controller
+{
+    private readonly ConexionMySQL _conexion;
+
+    public UsuariosController(ConexionMySQL conexion)
+    {
+        _conexion = conexion;
+    }
+
+    public async Task<IActionResult> Index()
+    {
+        var listaUsuarios = await _conexion.ObtenerUsuarios();
+        return View(listaUsuarios);
+    }
+}
+
