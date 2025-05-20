@@ -1,31 +1,56 @@
-﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{6E8B54C2-3A31-4FC2-BB2A-4A216C20F2AD}|Default">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.PaginaRecetas PreferredExecutionTarget="/Applications/Arc.app" />
+﻿<Properties StartupConfiguration="{6E8B54C2-3A31-4FC2-BB2A-4A216C20F2AD}|Default" GitUserInfo="UsingGIT">
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="PaginaRecetas/Controllers/AdminController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PaginaRecetas/PaginaRecetas.csproj">
     <Files>
-      <File FileName="PaginaRecetas/Controllers/AdminController.cs" Line="109" Column="42" />
+      <File FileName="PaginaRecetas/PaginaRecetas.csproj" Line="27" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="PaginaRecetas">
-            <Node name="PaginaRecetas" expanded="True">
+            <Node name="PaginaRecetas" selected="True">
+              <Node name="Areas" expanded="True">
+                <Node name="Identity" expanded="True">
+                  <Node name="Pages" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="Clases" expanded="True" />
               <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Admin" expanded="True" />
-                <Node name="Home" expanded="True" />
-                <Node name="Shared" expanded="True" />
               </Node>
-              <Node name="wwwroot" expanded="True" />
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+                <Node name="js" expanded="True" />
+                <Node name="lib" expanded="True">
+                  <Node name="jquery-validation" expanded="True">
+                    <Node name="dist" expanded="True">
+                      <Node name="additional-methods.js" expanded="True" />
+                      <Node name="jquery.validate.js" expanded="True" />
+                    </Node>
+                  </Node>
+                  <Node name="jquery-validation-unobtrusive" expanded="True">
+                    <Node name="jquery.validate.unobtrusive.js" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="appsettings.json" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <Debugger.DebugSourceFolders>
+    <String>/Users/raulmanzaneramedina/Library/CloudStorage/OneDrive-UniversidadAutonomadeNuevoLeón/Uni OneDrive/Página de Recetas/Repositorio/PIA-LWEB/PaginaRecetas</String>
+  </Debugger.DebugSourceFolders>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.PaginaRecetas PreferredExecutionTarget="/Applications/Arc.app" />
 </Properties>
