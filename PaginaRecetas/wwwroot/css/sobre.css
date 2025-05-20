@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #97c7c7;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 10px;
+}
+
+.card-header {
+    background-color: #cce6e6;
+    padding: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+}
+
+.card-content p {
+    text-align: justify;
+}
+
+.card-proyecto {
+    flex: 2;
+    text-align: right;
+}
+
+.card-nosotros {
+    flex: 1;
+    text-align: left;
+}
