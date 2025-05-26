@@ -1,22 +1,16 @@
 ﻿<Properties StartupConfiguration="{6E8B54C2-3A31-4FC2-BB2A-4A216C20F2AD}|Default" GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.ItemProperties.PaginaRecetas PreferredExecutionTarget="/Applications/Arc.app" />
-  <Debugger.DebugSourceFolders>
-    <String>/Users/raulmanzaneramedina/Library/CloudStorage/OneDrive-UniversidadAutonomadeNuevoLeón/Uni OneDrive/Página de Recetas/Repositorio/PIA-LWEB/PaginaRecetas</String>
-  </Debugger.DebugSourceFolders>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../../../../../../usr/local/share/dotnet/sdk/7.0.410/Sdks/Microsoft.NET.Sdk/targets/Microsoft.PackageDependencyResolution.targets">
-    <Files>
-      <File FileName="../../../../../../../../../usr/local/share/dotnet/sdk/7.0.410/Sdks/Microsoft.NET.Sdk/targets/Microsoft.PackageDependencyResolution.targets" Line="266" Column="5" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="PaginaRecetas" selected="True">
-            <Node name="PaginaRecetas" expanded="True">
+          <Node name="PaginaRecetas">
+            <Node name="PaginaRecetas">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Data" expanded="True">
+                <Node name="Migrations" expanded="True" />
+              </Node>
               <Node name="Views" expanded="True">
                 <Node name="Admin" expanded="True" />
               </Node>
@@ -26,5 +20,14 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.PaginaRecetas PreferredExecutionTarget="/Applications/Arc.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <Debugger.DebugSourceFolders>
+    <String>/Users/raulmanzaneramedina/Library/CloudStorage/OneDrive-UniversidadAutonomadeNuevoLeón/Uni OneDrive/Página de Recetas/Repositorio/PIA-LWEB/PaginaRecetas</String>
+  </Debugger.DebugSourceFolders>
 </Properties>
