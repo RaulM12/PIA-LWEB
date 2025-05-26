@@ -1,9 +1,7 @@
 ﻿using AspNetCoreGeneratedDocument;
 using Microsoft.AspNetCore.Mvc;
-//si no son necesarios quitenlos
 using PaginaRecetas.Data;
 using PaginaRecetas.Models;
-
 using SQLitePCL;
 using static PaginaRecetas.Data.ApplicationDbContext;
 
@@ -12,12 +10,11 @@ namespace PaginaRecetas.Controllers
 {
     public class CuentaController : Controller
     {
-        private readonly CuentaController _context;
+        private readonly ApplicationDbContext _context;
 
-         public CuentaController(CuentaController contex)
-        {  
-            _context = contex; 
-        
+        public CuentaController(ApplicationDbContext context)
+        {
+            _context = context;
         }
 
         public IActionResult Cuenta()
