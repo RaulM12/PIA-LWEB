@@ -1,11 +1,12 @@
 ﻿using AspNetCoreGeneratedDocument;
 using Microsoft.AspNetCore.Mvc;
-// si no son necesarios quitenlos
+//si no son necesarios quitenlos
 using PaginaRecetas.Data;
 using PaginaRecetas.Models;
-//
+
 using SQLitePCL;
 using static PaginaRecetas.Data.ApplicationDbContext;
+
 
 namespace PaginaRecetas.Controllers
 {
@@ -30,14 +31,14 @@ namespace PaginaRecetas.Controllers
         }
         // registro base de datos//
 
-        [HttpGet]
+        /* [HttpGet] */
         public IActionResult Signin()
         {
             return View();
         }
 
         // Registro de usuario
-        [HttpPost]
+        /* [HttpPost]
         public async Task<IActionResult> Signin(usuarios usuario)
         {
             if (ModelState.IsValid)
@@ -45,14 +46,14 @@ namespace PaginaRecetas.Controllers
                 // checar este error
 
                 /*_context.usuarios.Add(usuario);
-                await _context.SaveChangesAsync(); */ // <- Guarda en la base de datos
+                await _context.SaveChangesAsync();  // <- Guarda en la base de datos
 
                 return RedirectToAction("Index", "Home"); // <- Redirige después del registro
             }
 
-            return View(usuario); // <- Si el modelo no es válido, regresa a la vista con los datos
-        }
-
+            return View(usuario); 
+        }*/
+     
 
         public IActionResult RecetasPublicadas()
         {

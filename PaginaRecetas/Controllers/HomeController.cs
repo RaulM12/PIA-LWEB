@@ -18,15 +18,16 @@ namespace PaginaRecetas.Controllers
             _logger = logger;
         }
 
-        public HomeController(ApplicationDbContext contex)
+       /* public HomeController(ApplicationDbContext contex)
         {
             _context = contex;
-        }
+        } */
 
         public async Task<IActionResult> Index()
         {
-            var recetas = _context.receta.ToList();
-            return View(recetas);
+            /*var recetas = _context.receta.ToList();*/
+            
+            return View();
         }
 
         public IActionResult Privacy()
