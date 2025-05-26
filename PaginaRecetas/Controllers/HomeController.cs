@@ -10,24 +10,21 @@ namespace PaginaRecetas.Controllers
     public class HomeController : Controller
     {
         private readonly ApplicationDbContext _context;
-        private readonly ILogger<HomeController> _logger; 
+        private readonly ILogger<HomeController> _logger;
 
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, ApplicationDbContext context)
         {
             _logger = logger;
+            _context = context;
         }
 
-       /* public HomeController(ApplicationDbContext contex)
-        {
-            _context = contex;
-        } */
 
         public async Task<IActionResult> Index()
         {
-            /*var recetas = _context.receta.ToList();*/
+            var recetas = _context.receta.ToList();
             
-            return View();
+            return View(recetas);
         }
 
         public IActionResult Privacy()

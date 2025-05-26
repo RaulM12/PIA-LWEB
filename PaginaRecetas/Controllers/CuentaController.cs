@@ -1,10 +1,7 @@
-﻿using AspNetCoreGeneratedDocument;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using PaginaRecetas.Data;
 using PaginaRecetas.Models;
-using SQLitePCL;
 using static PaginaRecetas.Data.ApplicationDbContext;
-
 
 namespace PaginaRecetas.Controllers
 {
@@ -22,35 +19,29 @@ namespace PaginaRecetas.Controllers
             return View();
         }
 
-        public IActionResult login()
+        public IActionResult Login()
         {
             return View();
         }
-        // registro base de datos//
 
-        /* [HttpGet] */
         public IActionResult Signin()
         {
             return View();
         }
 
-        // Registro de usuario
-        /* [HttpPost]
+        [HttpPost]
         public async Task<IActionResult> Signin(usuarios usuario)
         {
             if (ModelState.IsValid)
             {
-                // checar este error
+                _context.usuario.Add(usuario);
+                await _context.SaveChangesAsync();
 
-                /*_context.usuarios.Add(usuario);
-                await _context.SaveChangesAsync();  // <- Guarda en la base de datos
-
-                return RedirectToAction("Index", "Home"); // <- Redirige después del registro
+                return RedirectToAction("Index", "Home");
             }
 
-            return View(usuario); 
-        }*/
-     
+            return View(usuario);
+        }
 
         public IActionResult RecetasPublicadas()
         {

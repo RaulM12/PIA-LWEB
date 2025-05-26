@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\marco\\Documents\\PIA-LWEB\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6E8B54C2-3A31-4FC2-BB2A-4A216C20F2AD}|PaginaRecetas\\PaginaRecetas.csproj|c:\\users\\marco\\documents\\pia-lweb\\paginarecetas\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E8B54C2-3A31-4FC2-BB2A-4A216C20F2AD}|PaginaRecetas\\PaginaRecetas.csproj|solutionrelative:paginarecetas\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6E8B54C2-3A31-4FC2-BB2A-4A216C20F2AD}|PaginaRecetas\\PaginaRecetas.csproj|c:\\users\\marco\\documents\\pia-lweb\\paginarecetas\\controllers\\cuentacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6E8B54C2-3A31-4FC2-BB2A-4A216C20F2AD}|PaginaRecetas\\PaginaRecetas.csproj|solutionrelative:paginarecetas\\controllers\\cuentacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E8B54C2-3A31-4FC2-BB2A-4A216C20F2AD}|PaginaRecetas\\PaginaRecetas.csproj|c:\\users\\marco\\documents\\pia-lweb\\paginarecetas\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E8B54C2-3A31-4FC2-BB2A-4A216C20F2AD}|PaginaRecetas\\PaginaRecetas.csproj|solutionrelative:paginarecetas\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6E8B54C2-3A31-4FC2-BB2A-4A216C20F2AD}|PaginaRecetas\\PaginaRecetas.csproj|c:\\users\\marco\\documents\\pia-lweb\\paginarecetas\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6E8B54C2-3A31-4FC2-BB2A-4A216C20F2AD}|PaginaRecetas\\PaginaRecetas.csproj|solutionrelative:paginarecetas\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E8B54C2-3A31-4FC2-BB2A-4A216C20F2AD}|PaginaRecetas\\PaginaRecetas.csproj|c:\\users\\marco\\documents\\pia-lweb\\paginarecetas\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E8B54C2-3A31-4FC2-BB2A-4A216C20F2AD}|PaginaRecetas\\PaginaRecetas.csproj|solutionrelative:paginarecetas\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E8B54C2-3A31-4FC2-BB2A-4A216C20F2AD}|PaginaRecetas\\PaginaRecetas.csproj|c:\\users\\marco\\documents\\pia-lweb\\paginarecetas\\controllers\\recetacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E8B54C2-3A31-4FC2-BB2A-4A216C20F2AD}|PaginaRecetas\\PaginaRecetas.csproj|solutionrelative:paginarecetas\\controllers\\recetacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E8B54C2-3A31-4FC2-BB2A-4A216C20F2AD}|PaginaRecetas\\PaginaRecetas.csproj|c:\\users\\marco\\documents\\pia-lweb\\paginarecetas\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E8B54C2-3A31-4FC2-BB2A-4A216C20F2AD}|PaginaRecetas\\PaginaRecetas.csproj|solutionrelative:paginarecetas\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6E8B54C2-3A31-4FC2-BB2A-4A216C20F2AD}|PaginaRecetas\\PaginaRecetas.csproj|c:\\users\\marco\\documents\\pia-lweb\\paginarecetas\\views\\cuenta\\signin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -38,24 +42,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "RecetaController.cs",
+              "DocumentMoniker": "C:\\Users\\marco\\Documents\\PIA-LWEB\\PaginaRecetas\\Controllers\\RecetaController.cs",
+              "RelativeDocumentMoniker": "PaginaRecetas\\Controllers\\RecetaController.cs",
+              "ToolTip": "C:\\Users\\marco\\Documents\\PIA-LWEB\\PaginaRecetas\\Controllers\\RecetaController.cs",
+              "RelativeToolTip": "PaginaRecetas\\Controllers\\RecetaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T23:26:01.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\marco\\Documents\\PIA-LWEB\\PaginaRecetas\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "PaginaRecetas\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\marco\\Documents\\PIA-LWEB\\PaginaRecetas\\Controllers\\HomeController.cs",
               "RelativeToolTip": "PaginaRecetas\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-25T23:20:18.822Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\marco\\Documents\\PIA-LWEB\\PaginaRecetas\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "PaginaRecetas\\Controllers\\AdminController.cs",
@@ -67,31 +84,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "CuentaController.cs",
               "DocumentMoniker": "C:\\Users\\marco\\Documents\\PIA-LWEB\\PaginaRecetas\\Controllers\\CuentaController.cs",
               "RelativeDocumentMoniker": "PaginaRecetas\\Controllers\\CuentaController.cs",
-              "ToolTip": "C:\\Users\\marco\\Documents\\PIA-LWEB\\PaginaRecetas\\Controllers\\CuentaController.cs",
-              "RelativeToolTip": "PaginaRecetas\\Controllers\\CuentaController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\marco\\Documents\\PIA-LWEB\\PaginaRecetas\\Controllers\\CuentaController.cs*",
+              "RelativeToolTip": "PaginaRecetas\\Controllers\\CuentaController.cs*",
+              "ViewState": "AgIAACAAAAAAAAAAAAAIwCkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T23:54:45.31Z"
+              "WhenOpened": "2025-05-25T23:54:45.31Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\marco\\Documents\\PIA-LWEB\\PaginaRecetas\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "PaginaRecetas\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\marco\\Documents\\PIA-LWEB\\PaginaRecetas\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "PaginaRecetas\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAPwAAAAAAAAAAAAqwAgBAAAfAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\marco\\Documents\\PIA-LWEB\\PaginaRecetas\\Data\\ApplicationDbContext.cs*",
+              "RelativeToolTip": "PaginaRecetas\\Data\\ApplicationDbContext.cs*",
+              "ViewState": "AgIAAPwAAAAAAAAAAAA6wAYBAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T22:20:47.19Z"
+              "WhenOpened": "2025-05-19T22:20:47.19Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "signin.cshtml",
               "DocumentMoniker": "C:\\Users\\marco\\Documents\\PIA-LWEB\\PaginaRecetas\\Views\\Cuenta\\signin.cshtml",
               "RelativeDocumentMoniker": "PaginaRecetas\\Views\\Cuenta\\signin.cshtml",
@@ -103,7 +122,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Cuenta.cshtml",
               "DocumentMoniker": "C:\\Users\\marco\\Documents\\PIA-LWEB\\PaginaRecetas\\Views\\Cuenta\\Cuenta.cshtml",
               "RelativeDocumentMoniker": "PaginaRecetas\\Views\\Cuenta\\Cuenta.cshtml",
@@ -115,7 +134,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\marco\\Documents\\PIA-LWEB\\PaginaRecetas\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "PaginaRecetas\\Views\\Home\\Index.cshtml",
