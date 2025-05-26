@@ -1,21 +1,32 @@
-﻿using System.Diagnostics;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using PaginaRecetas.Data;
 using PaginaRecetas.Models;
+using SQLitePCL;
+using System.Diagnostics;
+using System.Threading.Tasks;
 
 namespace PaginaRecetas.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ApplicationDbContext _context;
+        private readonly ILogger<HomeController> _logger; 
+
 
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public HomeController(ApplicationDbContext contex)
         {
-            return View();
+            _context = contex;
+        }
+
+        public async Task<IActionResult> Index()
+        {
+            var recetas = _context.receta.ToList();
+            return View(recetas);
         }
 
         public IActionResult Privacy()
