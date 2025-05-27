@@ -24,13 +24,13 @@ namespace PaginaRecetas.Controllers
             return View();
         }
 
-        public IActionResult Signin()
+        public IActionResult signin()
         {
             return View();
         }
 
         [HttpPost]
-        public async Task<IActionResult> Signin(usuarios usuario)
+        public async Task<IActionResult> signin(usuarios usuario)
         {
             if (ModelState.IsValid)
             {
@@ -42,7 +42,7 @@ namespace PaginaRecetas.Controllers
 
             return View(usuario);
         }
-
+      
         public IActionResult RecetasPublicadas()
         {
             return View();

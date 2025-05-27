@@ -1,5 +1,8 @@
+@using PaginaRecetas.Data
+@model usuarios
+
 @{
-    ViewData["Title"] = "SignIn";
+    ViewData["Title"] = "signin";
 }
 
 <head>
@@ -8,18 +11,18 @@
 
 <div id="form">
     <p>Sign in</p>
-    <form>
+    <form asp-action="signin" method="post">
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Correo</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <input asp-for="email" class="form-control" />
         </div>
         <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+            <input asp-for="contraseña" class="form-control" type="password"/>
         </div>
         <div class="mb-3">
             <label for="exampleInputConfirmPassword1" class="form-label">Confirmar contraseña</label>
-            <input type="password" class="form-control" id="exampleInputConfirmPassword1">
+            <input name="ConfirmaContraseña" class="form-control" type="password"/>
         </div>
         <button type="submit" class="btn btn-primary">Registrarte</button>
     </form>

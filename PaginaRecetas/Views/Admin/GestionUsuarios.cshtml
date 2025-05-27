@@ -53,6 +53,30 @@
                         <th>Acciones</th>
                     </tr>
                 </thead>
+                @foreach(var usuarios in Model)
+                {
+                    <tr>
+                        <td>@usuarios.id</td>
+                        <td>@usuarios.fecha_registro</td>
+                        <td>@usuarios.nombre</td>
+                        <td>@usuarios.email</td>
+                        <td>usuario</td>
+                        <td>
+                            <button class="action-menu">:</button>
+                            <div class="dropdown-menu">
+                                if (usuario == "Moredador" )
+                                {
+                                    <a href="#">Cambiar a usuario</a>
+                                }
+                                else
+                                {
+                                    <a href="#">Cambiar a moredador</a>
+                                }
+                                <a href="#">Eliminar cuenta</a>
+                            </div>
+                        </td>
+                    </tr>
+                }
                 <tbody>
                     <tr>
                         <td>***</td>
