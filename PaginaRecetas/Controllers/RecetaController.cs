@@ -51,20 +51,31 @@ namespace PaginaRecetas.Controllers
             {
                 return NotFound();
             }
-            return View(receta);
+            return View("EditarReceta", receta);
         }
 
         // POST: Guardar cambios
         [HttpPost]
         public async Task<IActionResult> Editar(recetas model)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                _context.receta.Update(model);
-                await _context.SaveChangesAsync();
-                return RedirectToAction("Index");
+                return View("EditarReceta", model);
             }
-            return View(model);
+
+            var recetaExistente = await _context.receta.FindAsync(model.id);
+            if (recetaExistente == null)
+            {
+                return NotFound();
+            }
+
+            recetaExistente.titulo = model.titulo;
+            recetaExistente.descripcion = model.descripcion;
+            // Agrega aquí más campos si los deseas actualizar
+
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction("Index");
         }
 
         // GET: Confirmar eliminación
