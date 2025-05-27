@@ -1,4 +1,6 @@
-﻿@{
+﻿@using PaginaRecetas.Data
+@model List<recetas>
+@{
     ViewData["Title"] = "Inicio";
 }
 
@@ -14,11 +16,20 @@
 <section class="explore-section text-center">
     <h3>Explorar</h3>
     <div class="d-flex justify-content-center mt-3">
-        <div class="explore-item"></div>
-        <div class="explore-item"></div>
-        <div class="explore-item"></div>
-        <div class="explore-item"></div>
-        <div class="explore-item"></div>
+      @foreach(var recetas in Model)
+        {
+            <div style="display: flex; margin-bottom: 20px; background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                <img src="@recetas.imagen_portada" alt="@recetas.titulo" style="width: 200px; object-fit: cover;" />
+                <div style="padding: 20px; flex: 1;">
+                    <h2>@recetas.titulo</h2>
+                    <p><strong>Descripción:</strong>@recetas.descripcion</p>
+                    <p><strong>Región:</strong>@recetas.region_nombre</p>
+                    <p><strong>Complejidad:</strong>@recetas.complejidad_nivel</p>
+                    <p><strong>Tiempo:</strong>@recetas.tiempo_duracion</p>
+                    <a href="@Url.Action("Detalle", "Receta", new { id = recetas.id })" style="padding: 10px 15px; background-color: #28a745; color: white; text-decoration: none; border-radius: 6px;">Ver Receta</a>
+                </div>
+            </div>
+        }
     </div>
 
     <h3 class="mt-5">Ver por:</h3>
