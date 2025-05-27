@@ -42,5 +42,54 @@ namespace PaginaRecetas.Controllers
 
             return View(model);
         }
+
+        // GET: Editar receta
+        public IActionResult Editar(int id)
+        {
+            var receta = _context.receta.FirstOrDefault(r => r.id == id);
+            if (receta == null)
+            {
+                return NotFound();
+            }
+            return View(receta);
+        }
+
+        // POST: Guardar cambios
+        [HttpPost]
+        public async Task<IActionResult> Editar(recetas model)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.receta.Update(model);
+                await _context.SaveChangesAsync();
+                return RedirectToAction("Index");
+            }
+            return View(model);
+        }
+
+        // GET: Confirmar eliminación
+        public IActionResult Eliminar(int id)
+        {
+            var receta = _context.receta.FirstOrDefault(r => r.id == id);
+            if (receta == null)
+            {
+                return NotFound();
+            }
+            return View(receta);
+        }
+
+        // POST: Ejecutar eliminación
+        [HttpPost, ActionName("Eliminar")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> EliminarConfirmado(int id)
+        {
+            var receta = _context.receta.FirstOrDefault(r => r.id == id);
+            if (receta != null)
+            {
+                _context.receta.Remove(receta);
+                await _context.SaveChangesAsync();
+            }
+            return RedirectToAction("Index");
+        }
     }
 }
