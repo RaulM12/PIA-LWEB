@@ -1,6 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using PaginaRecetas.Data;
 using PaginaRecetas.Models;
+using System.Security.Claims;
 using static PaginaRecetas.Data.ApplicationDbContext;
 
 namespace PaginaRecetas.Controllers
@@ -16,12 +20,43 @@ namespace PaginaRecetas.Controllers
 
         public IActionResult Cuenta()
         {
+            var email = User.Identity.Name; // Asegúrate de que el usuario ha iniciado sesión
+            var usuario = _context.usuario.FirstOrDefault(u => u.email == email);
             return View();
         }
 
-        public IActionResult Login()
+
+        public IActionResult login()
         {
             return View();
+        }
+        
+        [HttpPost]
+        public async Task<IActionResult> login(usuarios usuario)
+        {
+            // Buscar al usuario por correo y contraseña
+            var userInDb = await _context.usuario
+                .FirstOrDefaultAsync(u => u.email == usuario.email && u.contraseña == usuario.contraseña);
+
+            if (userInDb != null)
+            {
+                // Autenticar al usuario (simplificado)
+                var claims = new List<Claim>
+        {
+            new Claim(ClaimTypes.Name, userInDb.email)
+        };
+
+                var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+                var principal = new ClaimsPrincipal(identity);
+
+                await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
+
+                return RedirectToAction("index", "home","Mi Cuenta"); 
+            }
+
+            // Si no coincide el usuario, mostrar error
+            ModelState.AddModelError("", "Correo o contraseña incorrectos.");
+            return View(usuario);
         }
 
         public IActionResult signin()

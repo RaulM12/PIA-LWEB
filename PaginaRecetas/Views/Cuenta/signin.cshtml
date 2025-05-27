@@ -13,6 +13,14 @@
     <p>Sign in</p>
     <form asp-action="signin" method="post">
         <div class="mb-3">
+            <label for="fecha_registro" class="form-label">Fecha de registro</label>
+            <input asp-for="fecha_registro" class="form-control" type="date" />
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputnombre" class="form-label">Nombre</label>
+            <input asp-for="nombre" class="form-control" />
+        </div>
+        <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Correo</label>
             <input asp-for="email" class="form-control" />
         </div>

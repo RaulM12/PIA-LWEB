@@ -1,3 +1,6 @@
+@using PaginaRecetas.Data
+@model usuarios
+
 @{
     ViewData["Title"] = "Mi Cuenta";
 }
@@ -9,7 +12,17 @@
             <img src="/path/to/default-profile.jpg" alt="Foto de perfil" />
         </div>
         <div class="profile-info">
-            <span id="name-text">Tu Nombre</span>
+            <div class="profile-info">
+                @if (Model != null)
+                {
+                    <p><strong>Correo:</strong> @Model.email</p>
+                    <p><strong>Nombre:</strong> @Model.nombre</p>
+                }
+                else
+                {
+                    <p>Anonimo</p>
+                }
+            </div>
             <button class="btn btn-light btn-sm edit-name">
                 <i class="fas fa-pencil-alt"></i> Editar Nombre
             </button>

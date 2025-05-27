@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 using PaginaRecetas.Data;
 using Microsoft.Extensions.FileProviders;
+using Microsoft.AspNetCore.Authentication.Cookies;
+
 
 var builder = WebApplication.CreateBuilder(new WebApplicationOptions
 {
@@ -22,8 +24,20 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 );
 
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+
+//roles
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
+
+//cokies
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
+    {
+        options.LoginPath = "/CuentaController/login"; // cambia esto al controlador correcto
+        options.AccessDeniedPath = "/Home/AccessDenied"; // opcional
+    });
+
+
 builder.Services.AddControllersWithViews();
 builder.Services.AddSingleton<ConexionMySQL>();
 
@@ -60,3 +74,4 @@ app.MapControllerRoute(
 app.MapRazorPages();
 
 app.Run();
+
