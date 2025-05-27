@@ -1,10 +1,19 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using PaginaRecetas.Data;
 
 namespace PaginaRecetas.Controllers
 {
     public class AdminController : Controller
     {
+
+        private readonly ApplicationDbContext _context;
+
+        public AdminController(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
         // GET: AdminController
         public ActionResult Estadisticas()
         {
@@ -12,7 +21,8 @@ namespace PaginaRecetas.Controllers
         }
         public ActionResult GestionUsuarios()
         {
-            return View();
+            var usuarios = _context.usuario.ToList();
+            return View(usuarios);
         }
         public ActionResult GestionFiltros()
         {
@@ -24,31 +34,37 @@ namespace PaginaRecetas.Controllers
         }
         public ActionResult Reportes()
         {
-            return View();
+            var reportes_recetas = _context.reporte_Recetas.ToList();
+            return View(reportes_recetas);
         }
         public ActionResult RecetasNuevas()
         {
-            return View();
+            var recetas = _context.receta.ToList();
+            return View(recetas);
         }
 
         public ActionResult FiltroTipo()
         {
-            return View();
+            var tipo = _context.tipos.ToList();
+            return View(tipo);
         }
 
         public ActionResult FiltroComplejidad()
         {
-            return View();
+            var complejidad = _context.complejidades.ToList();
+            return View(complejidad);
         }
 
         public ActionResult FiltroTiempo()
         {
-            return View();
+            var tiempo = _context.tiempos.ToList();
+            return View(tiempo);
         }
 
         public ActionResult FiltroRegion()
         {
-            return View();
+            var region = _context.regiones.ToList();
+            return View(region);
         }
 
 
